@@ -1,0 +1,113 @@
+/* geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .2rem;
+}
+
+body {
+    background: #f1f5f8;
+}
+
+h4, a {
+    font-weight: normal;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+h4 {
+    color: #7CDAF9;
+}
+
+a::before {
+    margin-left: auto;
+}
+
+a::before, 
+a::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: #000;
+    display: block;
+    transition: .4s;
+}
+
+a:hover::before, 
+a:hover::after {
+    width: 100%;
+}
+
+a:active {
+    color: #444;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* nav */
+nav {
+    background: #fff;
+    box-shadow: 0px 0px 20px -10px #000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+/* container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container h2 {
+    color: #fff;
+    background: #444;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px #000;
+}
+
+.container h2 span {
+    color: #7CDAF9;
+    display: block;
+    text-transform: uppercase;
+}
+
+button {
+    background: transparent;
+    border: 3px solid #000;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: .4s;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
